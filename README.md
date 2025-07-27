@@ -1,7 +1,8 @@
 # 🌍 Random Country Picker
 
 **210개국 중 무작위로 국가를 선택해주는 웹 애플리케이션**
-사이트: https://testmyluck.netlify.app/
+
+##사이트: https://testmyluck.netlify.app/
 
 ## 📖 프로젝트 소개
 
