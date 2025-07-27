@@ -1,0 +1,26 @@
+// 북아메리카 국가 데이터
+export const northAmericaCountries = [
+    { name: "미국", continent: "north-america", flag: "🇺🇸", capital: "워싱턴 D.C.", population: "3.3억명", area: "9,833,517 km²" },
+    { name: "캐나다", continent: "north-america", flag: "🇨🇦", capital: "오타와", population: "3,800만명", area: "9,984,670 km²" },
+    { name: "멕시코", continent: "north-america", flag: "🇲🇽", capital: "멕시코시티", population: "1.3억명", area: "1,964,375 km²" },
+    { name: "과테말라", continent: "north-america", flag: "🇬🇹", capital: "과테말라시티", population: "1,800만명", area: "108,889 km²" },
+    { name: "벨리즈", continent: "north-america", flag: "🇧🇿", capital: "벨모판", population: "40만명", area: "22,970 km²" },
+    { name: "엘살바도르", continent: "north-america", flag: "🇸🇻", capital: "산살바도르", population: "650만명", area: "21,041 km²" },
+    { name: "온두라스", continent: "north-america", flag: "🇭🇳", capital: "테구시갈파", population: "1,000만명", area: "112,492 km²" },
+    { name: "니카라과", continent: "north-america", flag: "🇳🇮", capital: "마나과", population: "670만명", area: "130,373 km²" },
+    { name: "코스타리카", continent: "north-america", flag: "🇨🇷", capital: "산호세", population: "510만명", area: "51,100 km²" },
+    { name: "파나마", continent: "north-america", flag: "🇵🇦", capital: "파나마시티", population: "430만명", area: "75,420 km²" },
+    { name: "쿠바", continent: "north-america", flag: "🇨🇺", capital: "아바나", population: "1,100만명", area: "109,884 km²" },
+    { name: "자메이카", continent: "north-america", flag: "🇯🇲", capital: "킹스턴", population: "300만명", area: "10,991 km²" },
+    { name: "아이티", continent: "north-america", flag: "🇭🇹", capital: "포르토프랭스", population: "1,150만명", area: "27,750 km²" },
+    { name: "도미니카공화국", continent: "north-america", flag: "🇩🇴", capital: "산토도밍고", population: "1,100만명", area: "48,671 km²" },
+    { name: "바하마", continent: "north-america", flag: "🇧🇸", capital: "나소", population: "40만명", area: "13,943 km²" },
+    { name: "바베이도스", continent: "north-america", flag: "🇧🇧", capital: "브리지타운", population: "29만명", area: "430 km²" },
+    { name: "트리니다드토바고", continent: "north-america", flag: "🇹🇹", capital: "포트오브스페인", population: "140만명", area: "5,128 km²" },
+    { name: "그레나다", continent: "north-america", flag: "🇬🇩", capital: "세인트조지스", population: "11만명", area: "344 km²" },
+    { name: "세인트빈센트그레나딘", continent: "north-america", flag: "🇻🇨", capital: "킹스타운", population: "11만명", area: "389 km²" },
+    { name: "세인트루시아", continent: "north-america", flag: "🇱🇨", capital: "캐스트리스", population: "18만명", area: "616 km²" },
+    { name: "도미니카", continent: "north-america", flag: "🇩🇲", capital: "로조", population: "7만명", area: "751 km²" },
+    { name: "앤티가바부다", continent: "north-america", flag: "🇦🇬", capital: "세인트존스", population: "10만명", area: "442 km²" },
+    { name: "세인트키츠네비스", continent: "north-america", flag: "🇰🇳", capital: "바스테르", population: "5만명", area: "261 km²" }
+]; 
