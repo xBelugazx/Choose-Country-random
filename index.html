@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>랜덤 국가 뽑기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>랜덤 국가 뽑기</h1>
+            <p>200개국 이상의 국가 중, 나는 태어난다면 어디에 태어날까?</p>
+        </header>
+
+        <main>
+            <div class="filter-section">
+                <h3>대륙 선택</h3>
+                <div class="continent-buttons">
+                    <button class="continent-btn active" data-continent="all">모든 대륙</button>
+                    <button class="continent-btn" data-continent="europe">유럽</button>
+                    <button class="continent-btn" data-continent="asia">아시아</button>
+                    <button class="continent-btn" data-continent="africa">아프리카</button>
+                    <button class="continent-btn" data-continent="north-america">북아메리카</button>
+                    <button class="continent-btn" data-continent="south-america">남아메리카</button>
+                    <button class="continent-btn" data-continent="oceania">오세아니아</button>
+                </div>
+            </div>
+
+            <div class="action-section">
+                <button id="pick-button" class="pick-button">
+                    <span class="button-text">임의의 국가 선택</span>
+                    <span class="button-icon">🎲</span>
+                </button>
+            </div>
+
+            <div class="result-section" id="result-section" style="display: none;">
+                <div class="result-card">
+                    <div class="flag-container">
+                        <span class="flag" id="country-flag">🏳️</span>
+                    </div>
+                    <h2 id="country-name">국가명</h2>
+                    <p id="country-continent">대륙</p>
+                    <div class="country-info">
+                        <div class="info-item">
+                            <span class="info-label">수도:</span>
+                            <span id="country-capital">수도명</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">인구:</span>
+                            <span id="country-population">인구수</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">면적:</span>
+                            <span id="country-area">면적</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="history-section">
+                <h3>최근 선택된 국가들</h3>
+                <div id="history-list" class="history-list">
+                    <!-- 최근 선택된 국가들이 여기에 표시됩니다 -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html> 
