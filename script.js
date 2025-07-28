@@ -42,11 +42,11 @@ pickButton.addEventListener('click', () => {
         return;
     }
     
-    // 랜덤 국가 선택
+    // choose random countries
     const randomIndex = Math.floor(Math.random() * filteredCountries.length);
     const selectedCountry = filteredCountries[randomIndex];
     
-    // 결과 표시
+    // show result
     displayResult(selectedCountry);
     
     // 히스토리에 추가
