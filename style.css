@@ -1,3 +1,6 @@
+/* 기본 폰트 설정 - 이모지 지원 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,10 +8,34 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
+    padding: 20px;
     color: #333;
+}
+
+/* 이모지 폰트 설정 */
+.flag {
+    font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', sans-serif;
+    font-size: 3rem;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+    line-height: 1;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+}
+
+/* 이모지 대체 스타일 - 원형 배경 */
+.flag[style*="border-radius: 50%"] {
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+    transition: all 0.3s ease;
+}
+
+.flag[style*="border-radius: 50%"]:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(102, 126, 234, 0.3);
 }
 
 .container {
@@ -135,11 +162,6 @@ header p {
     margin-bottom: 20px;
 }
 
-.flag {
-    font-size: 4rem;
-    display: block;
-}
-
 .result-card h2 {
     font-size: 2rem;
     margin-bottom: 10px;
@@ -205,9 +227,12 @@ header p {
 }
 
 .history-flag {
+    font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', sans-serif;
     font-size: 2rem;
     display: block;
     margin-bottom: 8px;
+    line-height: 1;
+    vertical-align: middle;
 }
 
 .history-name {
@@ -218,6 +243,30 @@ header p {
 .history-continent {
     color: #666;
     font-size: 0.9rem;
+}
+
+/* 지도 섹션 스타일 */
+.map-section {
+    margin: 30px 0;
+}
+
+#country-map {
+    height: 320px;
+    border-radius: 16px;
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+}
+
+/* 지도가 로드되지 않을 때 표시할 배경 */
+#country-map:empty::before {
+    content: '지도를 불러오는 중...';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #666;
+    font-size: 14px;
 }
 
 @media (max-width: 768px) {
