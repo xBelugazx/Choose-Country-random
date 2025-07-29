@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Country Picker</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <h1>Random Country Picker</h1>
+                <div class="language-switch">
+                    <button class="lang-btn" onclick="window.location.href='index.html'">한국어</button>
+                    <button class="lang-btn active" onclick="window.location.href='index-en.html'">English</button>
+                </div>
+            </div>
+            <p class="header-desc">If you were to be born again in your next life,<br>which country would it be?<br>Pick a random country,<br>and discover its details!</p>
+        </header>
+
+        <main>
+            <div class="filter-section">
+                <h3>Select Continent</h3>
+                <div class="continent-buttons">
+                    <button class="continent-btn active" data-continent="all">All Continents</button>
+                    <button class="continent-btn" data-continent="europe">Europe</button>
+                    <button class="continent-btn" data-continent="asia">Asia</button>
+                    <button class="continent-btn" data-continent="africa">Africa</button>
+                    <button class="continent-btn" data-continent="north-america">North America</button>
+                    <button class="continent-btn" data-continent="south-america">South America</button>
+                    <button class="continent-btn" data-continent="oceania">Oceania</button>
+                </div>
+            </div>
+
+            <div class="action-section">
+                <button id="pick-button" class="pick-button">
+                    <span class="button-text">Pick Random Country</span>
+                    <span class="button-icon">🎲</span>
+                </button>
+            </div>
+
+            <div class="result-section" id="result-section" style="display: none;">
+                <div class="result-card">
+                    <div class="flag-container">
+                        <span class="flag" id="country-flag">🏳️</span>
+                    </div>
+                    <h2 id="country-name">Country Name</h2>
+                    <p id="country-continent">Continent</p>
+                    <div class="country-info">
+                        <div class="info-item">
+                            <span class="info-label">Capital:</span>
+                            <span id="country-capital">Capital City</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Population:</span>
+                            <span id="country-population">Population</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Area:</span>
+                            <span id="country-area">Area</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- OpenStreetMap Area -->
+            <div class="map-section">
+                <div id="country-map" style="height: 320px; border-radius: 16px; margin: 30px 0;"></div>
+            </div>
+
+            <div class="history-section">
+                <h3>Recently Selected Countries</h3>
+                <div id="history-list" class="history-list">
+                    <!-- Recently selected countries will be displayed here -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script type="module" src="script-en.js"></script>
+</body>
+</html>

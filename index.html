@@ -11,8 +11,14 @@
 <body>
     <div class="container">
         <header>
-            <h1>랜덤 국가 뽑기</h1>
-            <p>200개국 이상의 국가 중 무작위로 선택해드립니다</p>
+            <div class="header-top">
+                <h1>랜덤 국가 뽑기</h1>
+                <div class="language-switch">
+                    <button class="lang-btn active" onclick="window.location.href='index.html'">한국어</button>
+                    <button class="lang-btn" onclick="window.location.href='index-en.html'">English</button>
+                </div>
+            </div>
+            <p class="header-desc">만약 다음 생에 다시 태어난다면,<br>어떤 나라에서 태어날까요?<br>랜덤으로 국가를 뽑아보고,<br>그 나라의 정보를 확인해보세요!</p>
         </header>
 
         <main>
@@ -78,4 +84,4 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script type="module" src="script.js"></script>
 </body>
-</html> 
+</html>
